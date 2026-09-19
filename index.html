@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A calculator for the magic word list game codes for Wizardry IV - Return of Werdna."
+    />
+    <title>Wizardry IV - Return of Werdna Magic Word List Game Codes</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <div class="hero__ornament" aria-hidden="true">IV</div>
+        <p class="eyebrow">A restored adventurer's utility</p>
+        <h1><span>Wizardry IV</span>Return of Werdna</h1>
+        <p class="hero__subtitle">Magic Word List Game Codes</p>
+      </header>
+
+      <section class="calculator" aria-labelledby="calculator-title">
+        <div class="calculator__intro">
+          <p class="section-kicker">The sealed archive</p>
+          <h2 id="calculator-title">Decode a magic word</h2>
+          <p>
+            The original codes were notoriously difficult to photocopy: black
+            ink printed on red paper. Fortunately, the 8,000-entry lookup table
+            was deduced and compressed into a 20 × 20 × 20 algorithm.
+          </p>
+        </div>
+
+        <form class="code-form" id="code-form">
+          <div class="selectors">
+            <label class="field">
+              <span><b>01</b> Input code</span>
+              <select id="code-1" aria-label="Input code 1"></select>
+            </label>
+            <label class="field">
+              <span><b>02</b> Input code</span>
+              <select id="code-2" aria-label="Input code 2"></select>
+            </label>
+            <label class="field">
+              <span><b>03</b> Input code</span>
+              <select id="code-3" aria-label="Input code 3"></select>
+            </label>
+            <button type="submit"><span>Reveal</span>Magic word</button>
+          </div>
+
+          <output class="result" id="result" aria-live="polite">
+            <span class="result__label">Your magic word</span>
+            <strong id="result-code">••••</strong>
+            <span class="result__detail" id="result-detail">
+              Choose three codes, then break the seal.
+            </span>
+          </output>
+        </form>
+      </section>
+
+      <section class="provenance" aria-labelledby="source-title">
+        <div class="provenance__rule" aria-hidden="true"></div>
+        <div>
+          <p class="section-kicker">Source notes</p>
+          <h2 id="source-title">Recovered from The Computist</h2>
+        </div>
+        <p>
+          The algorithm was documented by Bob Colbert in
+          <cite>The Computist</cite>, Issue #51, January 1988, page 36.
+        </p>
+        <a
+          href="https://archive.org/details/computist-scan-51"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Read Issue #51 on the Internet Archive <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <footer>
+        <span>20 × 20 × 20</span>
+        <p>Eight thousand paths. One word revealed.</p>
+      </footer>
+    </main>
+  </body>
+</html>
