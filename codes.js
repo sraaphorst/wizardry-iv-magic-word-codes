@@ -33,7 +33,7 @@ export function calculateMagicWord(keys) {
     return sum + entry[1];
   }, 0);
 
-  while (total >= 10000) total -= 9000;
+  total = ((total - 1000) % 9000) + 1000;
   return total;
 }
 
